@@ -8,6 +8,6 @@
 }
 
 /* Signs and Support Styles */
-#cards {
-    border: none;
+.card {
+    border: none !important;
 }
