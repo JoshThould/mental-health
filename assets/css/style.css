@@ -1,7 +1,13 @@
 /* general styles */
 
+/* Navbar Styles */
 .active {
     font-weight: bold underline;
     text-decoration: underline;
     color: black;
+}
+
+/* Signs and Support Styles */
+#cards {
+    border: none;
 }
