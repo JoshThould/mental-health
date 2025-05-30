@@ -9,7 +9,10 @@
     --highlight-color: #c3e0f5; /* lightest blue */
 }
 
-/* general styles */
+/* Globalstyles */
+
+body {
+    font-family: var(--primary-font);
 
 /* Navbar Styles */
 .active {
@@ -47,3 +50,12 @@ custom-button-filled {
     background-color: var(--highlight-color);
     color: white;
 }
+
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+}
+
