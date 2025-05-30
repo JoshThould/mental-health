@@ -13,7 +13,7 @@
 
 body {
     font-family: var(--primary-font);
-
+}
 /* Navbar Styles */
 .active {
     font-weight: bold underline;
@@ -51,6 +51,13 @@ custom-button-filled {
     color: white;
 }
 
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
 
 /* Footer Styles */
 footer {
@@ -58,4 +65,4 @@ footer {
     color: white;
     padding: 20px 0;
 }
-
+/* End of Styles */
