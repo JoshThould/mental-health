@@ -59,6 +59,42 @@ header {
     text-align: center;
 }
 
+/* Carousel Styles */
+
+/* Ensure carousel container is centered */
+.row.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Center the carousel within its column */
+.col-12.col-xl-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the carousel itself */
+#carouselExampleAutoplaying {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Ensuring images scale properly */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Prevent cropping */
+    display: block;
+}
+
+/* Adjusting carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(100%); /* Makes arrows more visible if needed */
+}
+
 /* Footer Styles */
 footer {
     background-color: var(--primary-color);
