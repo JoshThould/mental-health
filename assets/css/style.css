@@ -1,3 +1,14 @@
+/*Google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap");
+
+/* CSS Variables */
+:root {
+    --primary-font: "Quicksand", sans-serif;
+    --primary-color: #5c90c2; /* blue */
+    --secondary-color: #84b4d3; /* light blue */
+    --highlight-color: #c3e0f5; /* lightest blue */
+}
+
 /* general styles */
 
 /* Navbar Styles */
@@ -10,4 +21,29 @@
 /* Signs and Support Styles */
 .card {
     border: none !important;
+}
+
+/* Button Styles */
+
+custom-button-filled {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.custom-button-filled:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.custom-button-outline {
+    border: 3px solid var(--highlight-color);
+    padding: 7px 25px;
+    color: var(--highlight-color);
+}
+
+.custom-button-outline:hover {
+    background-color: var(--highlight-color);
+    color: white;
 }
