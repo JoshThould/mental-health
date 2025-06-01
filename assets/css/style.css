@@ -75,7 +75,7 @@ header {
 }
 
 /* Styling for the carousel itself */
-#carouselExampleAutoplaying {
+#carousel {
     width: 100%;
     max-width: 600px;
     margin: auto;
@@ -113,6 +113,46 @@ footer {
 }
 
 /* Media queries */
+
+/* Small devices (phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
+    header {
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+
+    .display-3,
+    .display-6 {
+        font-size: 2rem;
+    }
+
+    .col-12.col-xl-6 {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 10px;
+    }
+
+    #carousel {
+        max-width: 100%;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .social-links a {
+        font-size: 1.5rem;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
