@@ -51,6 +51,10 @@ custom-button-filled {
     color: white;
 }
 
+.donate {
+    color: white;
+}
+
 /* Header Styles */
 header {
     background-color: var(--primary-color);
