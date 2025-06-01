@@ -51,6 +51,11 @@ custom-button-filled {
     color: white;
 }
 
+.links {
+    color: black;
+    text-decoration: none;
+}
+
 .donate {
     color: white;
 }
