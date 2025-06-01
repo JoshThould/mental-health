@@ -101,6 +101,17 @@ footer {
     color: white;
     padding: 20px 0;
 }
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 24px; /* Adjust icon size */
+    color: white;
+}
+
+.social-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
 /* Media queries */
 
 /* Medium devices (tablets, 768px and up) */
