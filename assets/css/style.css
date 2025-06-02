@@ -16,7 +16,7 @@ body {
 }
 /* Navbar Styles */
 .active {
-    font-weight: bold underline;
+    font-weight: underline;
     text-decoration: underline;
     color: black;
 }
