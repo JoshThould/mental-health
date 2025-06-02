@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/med.png" alt="woman meditating">
+                        <img class="card-img-top" src="assets/images/med.webp" alt="woman meditating">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Anxiety</h3>
                             <p class="card-text"></p>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/run.png" alt="man running">
+                        <img class="card-img-top" src="assets/images/run.webp" alt="man running">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Depression</h3>
                             <p class="card-text"></p>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/read.png" alt="woman reading in nature">
+                        <img class="card-img-top" src="assets/images/read.webp" alt="woman reading in nature">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Stress & Burnout</h3>
                             <p class="card-text"></p>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/friends.png"
+                        <img class="card-img-top" src="assets/images/friends.webp"
                             alt="friends socialising at the beach">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Self-Esteem</h3>
@@ -201,6 +201,27 @@
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/70d9507ffc.js" crossorigin="anonymous"></script>
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
 
 </body>
 
